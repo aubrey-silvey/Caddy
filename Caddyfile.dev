@@ -1,0 +1,27 @@
+{
+    admin off
+}
+
+local.materials.silvey.com {
+    tls internal
+    encode gzip zstd
+    reverse_proxy 127.0.0.1:5173
+}
+
+local.bidlist.silvey.com {
+    tls internal
+    encode gzip zstd
+    reverse_proxy 127.0.0.1:5174
+}
+
+local.finances.silvey.com {
+    tls internal
+    encode gzip zstd
+    reverse_proxy 127.0.0.1:5175
+}
+
+local.hr.silvey.com {
+    tls internal
+    encode gzip zstd
+    reverse_proxy 127.0.0.1:5176
+}
