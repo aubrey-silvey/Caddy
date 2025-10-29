@@ -25,3 +25,9 @@ local.hr.silvey.com {
     encode gzip zstd
     reverse_proxy 127.0.0.1:5176
 }
+
+local.component-library.silvey.com {
+    tls internal
+    encode gzip zstd
+    reverse_proxy 127.0.0.1:5177
+}
