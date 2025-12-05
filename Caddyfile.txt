@@ -37,3 +37,9 @@ local.diff.silvey.com {
     encode gzip zstd
     reverse_proxy 127.0.0.1:5178
 }
+
+local.newhire.silvey.com {
+    tls internal
+    encode gzip zstd
+    reverse_proxy 127.0.0.1:5179
+}
