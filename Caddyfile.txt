@@ -32,7 +32,7 @@ local.component-library.silvey.com {
     reverse_proxy 127.0.0.1:5177
 }
 
-local.diff.silvey.com {
+local.forms.silvey.com {
     tls internal
     encode gzip zstd
     reverse_proxy 127.0.0.1:5178
@@ -44,7 +44,7 @@ local.newhire.silvey.com {
     reverse_proxy 127.0.0.1:5179
 }
 
-local.forms.silvey.com {
+local.diff.silvey.com {
     tls internal
     encode gzip zstd
     reverse_proxy 127.0.0.1:5180
