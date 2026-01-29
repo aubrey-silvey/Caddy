@@ -49,3 +49,9 @@ local.forms.silvey.com {
     encode gzip zstd
     reverse_proxy 127.0.0.1:5180
 }
+
+local.management.silvey.com {
+    tls internal
+    encode gzip zstd
+    reverse_proxy 127.0.0.1:5181
+}
