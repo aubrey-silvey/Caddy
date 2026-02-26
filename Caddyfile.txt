@@ -5,65 +5,87 @@
 local.materials.silvey.com {
     tls internal
     encode gzip zstd
-    reverse_proxy 127.0.0.1:5173
+    reverse_proxy 127.0.0.1:5173 {
+        header_up Host 127.0.0.1:5173
+    }
 }
 
 local.bidlist.silvey.com {
     tls internal
     encode gzip zstd
-    reverse_proxy 127.0.0.1:5174
+    reverse_proxy 127.0.0.1:5174 {
+        header_up Host 127.0.0.1:5174
+    }
 }
 
 local.finances.silvey.com {
     tls internal
     encode gzip zstd
-    reverse_proxy 127.0.0.1:5175
+    reverse_proxy 127.0.0.1:5175 {
+        header_up Host 127.0.0.1:5175
+    }
 }
 
 local.hr.silvey.com {
     tls internal
     encode gzip zstd
-    reverse_proxy 127.0.0.1:5176
+    reverse_proxy 127.0.0.1:5176 {
+        header_up Host 127.0.0.1:5176
+    }
 }
 
 local.component-library.silvey.com {
     tls internal
     encode gzip zstd
-    reverse_proxy 127.0.0.1:5177
+    reverse_proxy 127.0.0.1:5177 {
+        header_up Host 127.0.0.1:5177
+    }
 }
 
 local.forms.silvey.com {
     tls internal
     encode gzip zstd
-    reverse_proxy 127.0.0.1:5178
+    reverse_proxy 127.0.0.1:5178 {
+        header_up Host 127.0.0.1:5178
+    }
 }
 
 local.newhire.silvey.com {
     tls internal
     encode gzip zstd
-    reverse_proxy 127.0.0.1:5179
+    reverse_proxy 127.0.0.1:5179 {
+        header_up Host 127.0.0.1:5179
+    }
 }
 
 local.diff.silvey.com {
     tls internal
     encode gzip zstd
-    reverse_proxy 127.0.0.1:5180
+    reverse_proxy 127.0.0.1:5180 {
+        header_up Host 127.0.0.1:5180
+    }
 }
 
 local.management.silvey.com {
     tls internal
     encode gzip zstd
-    reverse_proxy 127.0.0.1:5181
+    reverse_proxy 127.0.0.1:5181 {
+        header_up Host 127.0.0.1:5181
+    }
 }
 
 local.dec.silvey.com {
     tls internal
     encode gzip zstd
-    reverse_proxy 127.0.0.1:5182
+    reverse_proxy 127.0.0.1:5182 {
+        header_up Host 127.0.0.1:5182
+    }
 }
 
 local.coffee.silvey.com {
     tls internal
     encode gzip zstd
-    reverse_proxy 127.0.0.1:5183
+    reverse_proxy 127.0.0.1:5183 {
+        header_up Host 127.0.0.1:5183
+    }
 }
