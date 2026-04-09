@@ -89,3 +89,11 @@ local.coffee.silvey.com {
         header_up Host 127.0.0.1:5183
     }
 }
+
+local.sis.silvey.com {
+    tls internal
+    encode gzip zstd
+    reverse_proxy 127.0.0.1:5183 {
+        header_up Host 127.0.0.1:5184
+    }
+}
