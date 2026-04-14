@@ -97,3 +97,11 @@ local.sis.silvey.com {
         header_up Host 127.0.0.1:5184
     }
 }
+
+local.jha.silvey.com {
+    tls internal
+    encode gzip zstd
+    reverse_proxy 127.0.0.1:5185 {
+        header_up Host 127.0.0.1:5185
+    }
+}
